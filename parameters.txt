@@ -1,0 +1,33 @@
+BEST FIT PARAMETERS
+========================================
+
+Golden ratio: phi = 1.618034
+Fixed point: tau0 = 0.309+0.951j
+
+MODULAR WEIGHTS:
+  k_u = [10.28, 5.94, -0.00]
+  k_d = [2.89, 3.29, 0.00]
+
+GEOMETRIC PARAMETERS:
+  L0 = 1.91
+  alpha = 1.30
+
+MIXING ANGLES (radians):
+  theta12 = 0.2277 (13.05 deg)
+  theta23 = 0.0413 (2.37 deg)
+  theta13 = 0.0037 (0.21 deg)
+
+CP VIOLATION:
+  delta_CP = 1.199 rad (68.7 deg)
+  Jarlskog invariant J = 3.12e-05
+
+MASS PREDICTIONS:
+  m_u/m_t = 1.07e-05
+  m_c/m_t = 0.0036
+  m_d/m_b = 1.09e-03
+  m_s/m_b = 0.0188
+
+CKM MATRIX PREDICTIONS:
+  |V_us| = 0.22576
+  |V_cb| = 0.04127
+  |V_ub| = 0.00370
