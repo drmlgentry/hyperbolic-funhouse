@@ -1,0 +1,118 @@
+﻿\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{appendix}
+\usepackage{cite}
+\usepackage{amsthm}
+\usepackage{bookmark}
+\usepackage{tikz}
+\usepackage{physics}
+\usepackage{siunitx}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\geometry{margin=1in}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{The Geometric Origin of Flavor: \\ Golden Ratio, Hyperbolic Holonomy, and CP Violation}
+\author{Marvin Gentry \\ 
+        Independent Researcher \\
+        ORCID: 0009-0006-4550-2663 \\
+        \texttt{drmlgentry@protonmail.com}}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We present a complete framework for fermion masses and mixing based on $A_5$ modular symmetry with modulus $\tau$ stabilized at the fixed point $\tau_0 = e^{2\pi i/5}$. The golden ratio $\phi = (1+\sqrt{5})/2$ emerges naturally from the residual $\mathbb{Z}_5$ symmetry. Our key innovation: identifying the CP-violating phase $\delta_{CP}$ with \textbf{hyperbolic holonomy}—parallel transport around non-contractible cycles in $\mathbb{H}/\Gamma(5)$ generates $\delta_{CP} = \ang{68.7}$ ($99.9\%$ agreement with $\delta_{CP}^{\text{exp}} = \ang{68.8}$). We provide: (1) rigorous holonomy calculation with Wilson loop integral, (2) string theory embedding in Type IIB with explicit modulus stabilization, (3) corrected neutrino mass ratio $\Delta m_{21}^2/\Delta m_{31}^2 \approx 0.029$ matching data, (4) explicit perturbation theory generating $\theta_{13} = \ang{8.6}$, (5) anomaly cancellation via Green-Schwarz mechanism, and (6) complete numerical verification code. All predictions are testable in current and future experiments.
+\end{abstract}
+
+\tableofcontents
+
+\section{Introduction}
+\label{sec:intro}
+[Previous introduction with emphasis on geometric paradigm]
+
+\section{String Theory Embedding and Modulus Stabilization}
+\label{sec:string}
+\input{sections/string_embedding.tex}
+
+\section{Geometry of $\mathbb{H}/\Gamma(5)$ and Modular Forms}
+\label{sec:geometry}
+\input{sections/geometry.tex}
+
+\section{The Universal Golden Matrix $M_0$}
+\label{sec:golden_matrix}
+\input{sections/golden_matrix.tex}
+
+\section{Hyperbolic Holonomy: Rigorous Calculation}
+\label{sec:holonomy}
+\input{sections/holonomy_rigorous.tex}
+
+\section{Fermion Hierarchies from Modular Weights}
+\label{sec:hierarchies}
+\input{sections/hierarchies.tex}
+
+\section{Perturbation Theory for $\theta_{13} \neq 0$}
+\label{sec:perturbations}
+\input{sections/perturbations.tex}
+
+\section{Corrected Phenomenological Predictions}
+\label{sec:pheno}
+\input{sections/predictions.tex}
+
+\section{Theoretical Consistency}
+\label{sec:consistency}
+\input{sections/consistency.tex}
+
+\section{Conclusion and Outlook}
+\label{sec:conclusion}
+[Previous conclusion]
+
+\appendix
+\section{Complete Holonomy Derivation}
+\label{app:holonomy_full}
+\input{appendices/holonomy_full.tex}
+
+\section{Anomaly Calculation Details}
+\label{app:anomaly}
+\input{appendices/anomaly.tex}
+
+\section{Numerical Methods and Code Verification}
+\label{app:numerical}
+\input{appendices/numerical.tex}
+
+\section*{Code Availability}
+All code for numerical verification, model exploration, and figure generation is available at:
+\[
+\href{https://github.com/drmlgentry/hyperbolic-funhouse}{https://github.com/drmlgentry/hyperbolic-funhouse}
+\]
+Specific functions:
+\begin{itemize}
+    \item \texttt{src/holonomy.py}: Wilson loop calculation
+    \item \texttt{src/diagonalization.py}: $\delta_{CP}$ extraction
+    \item \texttt{notebooks/verification.ipynb}: Complete numerical verification
+    \item \texttt{tests/test\_predictions.py}: Unit tests against experimental data
+\end{itemize}
+
+\begin{thebibliography}{99}
+\bibitem{Feruglio:2019} F. Feruglio, Eur. Phys. J. C \textbf{79} (2019) 125.
+\bibitem{Kachru:2003} S. Kachru et al., Phys. Rev. D \textbf{68} (2003) 046005.
+\bibitem{ParticleDataGroup:2024} Particle Data Group, PTEP \textbf{2024} (2024) 083C01.
+\bibitem{NuFIT:2024} NuFIT 5.3 (2024), \url{http://www.nu-fit.org}.
+\bibitem{Denef:2005} F. Denef et al., Adv. Theor. Math. Phys. \textbf{9} (2005) 861.
+\end{thebibliography}
+
+\end{document}
